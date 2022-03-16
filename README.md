@@ -1,4 +1,4 @@
-# Simple Portfolio Template
+# Simple Portfolio 
 Simple responsive portfolio 
 
 ## npm scripts
