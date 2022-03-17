@@ -1,6 +1,6 @@
 import { useMantineTheme, Text, Container, Anchor, RingProgress, Grid, MediaQuery } from '@mantine/core';
 
-const About = () => {
+const AboutMe = () => {
 	const theme = useMantineTheme();
 
 	return (
@@ -46,4 +46,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default AboutMe;
