@@ -23,6 +23,11 @@ const Header = () => {
                     onClick={() => setOpened((o) => !o)}
                     title={title}
                 >
+                    <div className="burger-menu">
+                        <div className="burger-menu-item">
+                            <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }} onClick={() => redirectToLink('https://github.com/elianngonzalez')}>Check out my Github</Button>
+                            </div>
+                    </div>
                     <div>
                         {/* <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }} onClick={() => redirectToLink('https://github.com/elianngonzalez')}>Check out my Github</Button>*/}
                         <a href="https://github.com/elianngonzalez">Check out my Github</a>
