@@ -1,9 +1,10 @@
 import { Button, Badge, Burger } from '@mantine/core';
 import React from 'react';
+import { useState } from 'react'; 
 
 const Header = () => {
     //const theme = useMantineTheme();
-    const [opened, setOpened] = React.useState(false);
+    const [opened, setOpened] = useState(false);
     const title = opened ? 'Close navigation' : 'Open navigation';
 
     return (
@@ -18,21 +19,17 @@ const Header = () => {
             </div>
 
             <div className="content-mobile">
-                <Burger
-                    opened={opened}
-                    onClick={() => setOpened((o) => !o)}
-                    title={title}
-                >
-                    <div className="burger-menu">
-                        <div className="burger-menu-item">
-                            <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }} onClick={() => redirectToLink('https://github.com/elianngonzalez')}>Check out my Github</Button>
-                            </div>
+                <div>
+                    <Burger
+                        opened={opened}
+                        onClick={() => setOpened((o) => !o)}
+                        title={title}
+                    />
+                    <div className="ass">
+                        <a  >Check out my Github</a>
+                        <a  >Check out my instagram</a>
                     </div>
-                    <div>
-                        {/* <Button variant="gradient" gradient={{ from: 'indigo', to: 'cyan' }} onClick={() => redirectToLink('https://github.com/elianngonzalez')}>Check out my Github</Button>*/}
-                        <a href="https://github.com/elianngonzalez">Check out my Github</a>
-                    </div>
-                </Burger>
+                </div>
             </div>
         </header>
     );
