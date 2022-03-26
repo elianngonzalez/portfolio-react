@@ -15,7 +15,7 @@ const AboutMe = () => {
 									query="(max-width: 1200px)"
 									styles={{ fontSize: '3.5rem !important' }}
 								>
-									<h1 className="title"> Elian Gonzalez</h1>
+									<h1 className="title">Elian Gonzalez</h1>
 								</MediaQuery>
 							</Text>
 						</div>
