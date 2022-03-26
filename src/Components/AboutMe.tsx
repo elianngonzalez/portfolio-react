@@ -21,7 +21,8 @@ const AboutMe = () => {
 						</div>
 						<div style={{ marginBottom: 25 }}>
 							<Text size="xl" color="black">
-								Simple showcase of this powerful and well implemented library called <Anchor href="https://mantine.dev/" target="_blank">Mantine</Anchor>.
+								<h3>A apassionate full-stack developer from Argentima</h3>
+								{/* Simple showcase of this powerful and well implemented library called <Anchor href="https://mantine.dev/" target="_blank"></Anchor>. */}
 							</Text>
 						</div>
 					</Grid.Col>
