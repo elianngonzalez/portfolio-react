@@ -1,6 +1,7 @@
 import { Container, Text, Title, Grid } from '@mantine/core';
 import { useEffect, useState } from 'react';
 import {GetRepos } from '../utils/API_github';
+import { CardsRepo } from './Cards';
 
 //mover al hijo, osea la card
 type ReposType ={
@@ -32,7 +33,9 @@ const SectionThree = () => {
                 </Text>
 
                 <Grid>
-                    <>{repos.map( (repo: ReposType) => (repo.name.concat(', ')))}</>
+                    <>{repos.map( (repo: ReposType) => (
+                    <CardsRepo name={repo.name} url={repo.html_url} description={repo.description}/>
+                    ))}</>
                 </Grid>
 
             </Container>

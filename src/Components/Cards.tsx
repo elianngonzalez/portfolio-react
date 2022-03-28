@@ -1,17 +1,31 @@
 import { useMantineTheme, Text, Grid, Image, Badge, Button, Group, Card } from '@mantine/core';
 import { useEffect, useState } from 'react';
+import { GetImg } from '../utils/API_github';
 
 type PropsCard = {
-    repos: object;
+    name: string;
+    description: string;
+    url: string;
 }
 
-export function CardsRepo (props : PropsCard) {
+type Img ={
+    download_url: string;
+}
+
+export function CardsRepo ({name , url , description } : PropsCard) {
     const theme = useMantineTheme();
-    const [img, setImg] = useState('');
+    const [img , setImg] = useState('');
 
     useEffect(() => {
         console.log('Card rendered')
-    }, [])
+        console.log(name + ' ' + url)
+        console.log(img)
+        GetImg(name).then(data => {
+            console.log(data.download_url);
+            if (data.length > 0) {
+                setImg(data.download_url);
+            }})
+    }, []);
 
     return (
         <>
@@ -19,22 +33,22 @@ export function CardsRepo (props : PropsCard) {
             <Grid.Col xs={12} sm={4} md={4} lg={4}>
                 <Card shadow="sm" padding="lg" style={{ height: '100%' }}>
                     <Card.Section>
-                        <Image src={require('../Images/card2.jfif')} alt={'sample1'} />
+                        <Image src={''} alt={'sample1'} />
                     </Card.Section>
 
                     <Group position="apart" style={{ marginBottom: 5, marginTop: theme.spacing.sm }}>
-                        <Text weight={500}>Career of Dennis Farina</Text>
+                        <Text weight={500}>{name}</Text>
                         <Badge color="green" variant="light">
                             Cool badge 2
                         </Badge>
                     </Group>
 
                     <Text size="sm">
-                        Dennis Farina had a really great career with many opportunities!
+                        {description}
                     </Text>
 
-                    <Button variant="light" color="blue" fullWidth style={{ marginTop: 14 }}>
-                        Find out
+                    <Button variant="light" color="blue" fullWidth style={{ marginTop: 14 }} onClick={() => redirectToLink(url)}>
+                        Find repository
                     </Button>
                 </Card>
             </Grid.Col>
@@ -42,3 +56,7 @@ export function CardsRepo (props : PropsCard) {
         </ >
     )
 }
+
+const redirectToLink = (link: string): void => {
+    window.open(link, '_blank');
+};
