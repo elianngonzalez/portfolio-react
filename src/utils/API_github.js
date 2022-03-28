@@ -7,9 +7,10 @@ export function GetRepos() {
         .catch(error => console.log(error));
 }   // getRepos
 
-export function GetImg(repo, path) {
-           // 
-    return fetch(`${API}/repos/${USER}/${repo}/contents/${path}`)
+export function GetImg(reponame) {
+    //no funciona todavia
+           // /repos/{owner}/{repo}/contents/{path}
+    return fetch(`${API}/repos/${USER}/${reponame}/contents/img/`)
         .then(response => response.json())
         .catch(error => console.log(error));
 }   // getImg 
