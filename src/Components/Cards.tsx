@@ -1,14 +1,21 @@
-import { useEffect } from 'react'
+import { useMantineTheme, Text, Grid, Image, Badge, Button, Group, Card } from '@mantine/core';
+import { useEffect, useState } from 'react';
 
-export function Card({repo}) {
+type PropsCard = {
+    repos: object;
+}
+
+export function CardsRepo (props : PropsCard) {
+    const theme = useMantineTheme();
+    const [img, setImg] = useState('');
 
     useEffect(() => {
-        console.log(repo)
         console.log('Card rendered')
     }, [])
 
     return (
         <>
+        <Grid>
             <Grid.Col xs={12} sm={4} md={4} lg={4}>
                 <Card shadow="sm" padding="lg" style={{ height: '100%' }}>
                     <Card.Section>
@@ -31,6 +38,7 @@ export function Card({repo}) {
                     </Button>
                 </Card>
             </Grid.Col>
+        </Grid>
         </ >
     )
 }
