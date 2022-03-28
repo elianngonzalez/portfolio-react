@@ -1,4 +1,4 @@
-import { useMantineTheme, Text, Container, Anchor, RingProgress, Grid, MediaQuery } from '@mantine/core';
+import { useMantineTheme, Text, Container, RingProgress, Grid, MediaQuery } from '@mantine/core';
 
 const AboutMe = () => {
 	const theme = useMantineTheme();
