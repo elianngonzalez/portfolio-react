@@ -1,9 +1,9 @@
-import { useMantineTheme, Container, Grid, Text, Button, Image, Popover } from '@mantine/core';
+import { useMantineTheme, Container, Grid, Text} from '@mantine/core';
 import React from 'react';
 
 const Footer = () => {
     const theme = useMantineTheme();
-    const [opened, setOpened] = React.useState(false);
+    // const [opened, setOpened] = React.useState(false);
     
     return (
         <footer style={{ backgroundColor: theme.colors.blue[7]}}>
@@ -48,6 +48,6 @@ const Footer = () => {
 
 export default Footer;
 
-const redirectToLink = (link: string): void => {
-    window.open(link, '_blank');
-};
+// const redirectToLink = (link: string): void => {
+//     window.open(link, '_blank');
+// };

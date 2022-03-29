@@ -1,4 +1,4 @@
-import { useMantineTheme, Text, Grid, Image, Badge, Button, Group, Card } from '@mantine/core';
+import { useMantineTheme, Text, Grid, Button, Group, Card } from '@mantine/core';
 import { useEffect} from 'react';
 
 type PropsCard = {
