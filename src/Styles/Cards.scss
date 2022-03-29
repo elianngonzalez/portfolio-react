@@ -1,0 +1,7 @@
+.card-Grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 230px );
+        margin: 20px;
+        padding: 10px;
+        justify-content: center;
+}
