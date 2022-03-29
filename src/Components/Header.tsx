@@ -25,10 +25,7 @@ const Header = () => {
                         onClick={() => setOpened((o) => !o)}
                         title={title}
                     />
-                    <div className="ass">
-                        <a  >Check out my Github</a>
-                        <a  >Check out my instagram</a>
-                    </div>
+                    
                 </div>
             </div>
         </header>

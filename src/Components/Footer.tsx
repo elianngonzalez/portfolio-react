@@ -13,14 +13,14 @@ const Footer = () => {
 
                     <Grid.Col xs={12} sm={8} md={8} lg={8}>
                         
-                        <Text size="xl" weight={700} color="white" style={{ marginBottom: 20 }}>A simple portfolio template</Text>
+                        <Text size="xl" weight={700} color="white" style={{ marginBottom: 20 }}>Elian Gonzalez</Text>
                         <Text color="white" style={{ marginBottom: 20 }}>
-                            You can do anything you want with this template, from portfolios to other stuff.
+                            You can contact me at : <strong>elianngonzalez9@gmail.com</strong>
                         </Text>
-                        <Button variant="white" onClick={() => redirectToLink('https://mantine.dev/')}>Check out Mantine</Button>
+                        {/* <Button variant="white" onClick={() => redirectToLink('https://mantine.dev/')}>Check out Mantine</Button> */}
                     </Grid.Col>
 
-                    <Grid.Col xs={12} sm={4} md={4} lg={4} style={{ textAlign: 'center' }}>
+                    {/* <Grid.Col xs={12} sm={4} md={4} lg={4} style={{ textAlign: 'center' }}>
                         <Text size="xl" weight={700} color="white" style={{ marginBottom: 10 }} align="center">
                             Template made by:
                         </Text>
@@ -38,7 +38,7 @@ const Footer = () => {
                         }>
                             <Text size="sm">Giuseppetm</Text>
                         </Popover>
-                    </Grid.Col>
+                    </Grid.Col> */}
 
                 </Grid>
             </Container>
