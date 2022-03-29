@@ -20,8 +20,8 @@ export function CardsRepo ({name , url , description } : PropsCard) {
     return (
         <>
         <Grid>
-            <Grid.Col xs={12} sm={4} md={4} lg={4} style={{textAlign:'center'}}>
-                <Card shadow="sm" padding="sm" style={{ height: '150px' , width: '200px' }}>
+            <Grid.Col style={{textAlign:'center'}}>
+                <Card shadow="sm" padding="sm" style={{ height: '250px' , width: '300px'}}>
                     {/* <Card.Section>
                         <Image src={''} alt={'sample1'} />
                     </Card.Section> */}

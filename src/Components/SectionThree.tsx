@@ -35,7 +35,7 @@ const SectionThree = () => {
                 <Grid style={{display:'grid' ,
                     gap:'20px',
                     padding:'10px' ,
-                    gridTemplateColumns:'repeat(auto-fit, 200px )',
+                    gridTemplateColumns:'repeat(auto-fit, 300px )',
                     justifyContent:'center'}}>
                     <>{repos.map( (repo: ReposType) => (
                     <CardsRepo name={repo.name} url={repo.html_url} description={repo.description}/>
