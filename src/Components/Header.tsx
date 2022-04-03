@@ -19,15 +19,15 @@ const Header = () => {
             </div>
 
             <div className="content-mobile">
-                <div>
+                 {/* <div>
                     <Burger
                         opened={opened}
                         onClick={() => setOpened((o) => !o)}
                         title={title}
                     />
                     
-                </div>
-            </div>
+                </div> */}
+            </div> 
         </header>
     );
 };
