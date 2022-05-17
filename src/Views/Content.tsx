@@ -4,6 +4,7 @@ import SectionTwo from '../Components/SectionTwo';
 import SectionThree from '../Components/SectionThree';
 import SectionFour from '../Components/SectionFour';
 
+
 const Content = () => {
     return (
         <>
@@ -20,5 +21,6 @@ const Content = () => {
         </>
     )
 };
+
 
 export default Content;
