@@ -8,5 +8,5 @@ export async function GetRepos() {
     } catch (error) {
         return console.log(error);
     }
-} // getRepos
+} // obtengo los repos de github
 
